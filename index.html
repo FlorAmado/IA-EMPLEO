@@ -4,61 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>JobFish</title>
+    <title>Pescando Trabajo</title>
 </head>
 <body>
-    <section class="hero">
-  <div class="hero-badge"><div class="dot"></div> Evento LABURATORIO</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><i class="fa-solid fa-bolt"></i> Evento LABURATORIO</div>
   <h1>Tu Próximo Empleo,<br><em>Impulsado por IA</em></h1>
   <p class="hero-sub">Herramientas seleccionadas para elevar tu perfil profesional tras el LABURATORIO. Todo lo que necesitás, en un solo lugar.</p>
   <div class="hero-rule"></div>
 </section>
 
-<!-- SECTION 1 -->
+<!-- SECTION 1: CV y LinkedIn -->
 <div class="wrap">
   <div class="sec-head">
-    <h2>Mejorar <span>CV y LinkedIn</span></h2>
+    <h2><i class="fa-solid fa-file-lines sec-icon"></i> Mejorar <span>CV y LinkedIn</span></h2>
   </div>
   <div class="cards-grid" id="cv-grid"></div>
 </div>
 
 <hr class="divider" style="margin-top:48px;"/>
 
-<!-- SECTION 2 -->
+<!-- SECTION 2: Entrevistas -->
 <div class="wrap">
   <div class="sec-head">
-    <h2>Práctica de <span>Entrevistas</span></h2>
+    <h2><i class="fa-solid fa-comments sec-icon"></i> Práctica de <span>Entrevistas</span></h2>
   </div>
   <div class="cards-grid" id="int-grid"></div>
 </div>
 
 <hr class="divider" style="margin-top:48px;"/>
 
-<!-- SECTION 3 -->
+<!-- SECTION 3: Prompts -->
 <div class="wrap">
   <div class="sec-head">
-    <h2>Prompts <span>Clave para ChatGPT</span></h2>
+    <h2><i class="fa-solid fa-robot sec-icon"></i> Prompts <span>Clave para la IA</span></h2>
   </div>
   <div class="prompts-grid" id="prompt-grid"></div>
 </div>
 
 <hr class="divider" style="margin:48px 36px;"/>
 
-<!-- SECTION 4 -->
+<!-- SECTION 4: Plantillas ATS -->
+<div class="wrap">
+  <div class="sec-head">
+    <h2><i class="fa-solid fa-filter sec-icon"></i> Plantillas para CV <span>Compatible con ATS</span></h2>
+    <p class="sec-desc">Los filtros ATS (Applicant Tracking System) son sistemas automáticos que usan las empresas para escanear CVs antes de que lleguen a un humano. Si tu CV no está bien estructurado, puede quedar fuera aunque seas el candidato ideal. Por eso es clave usar plantillas simples, sin columnas complejas, tablas ni íconos, con palabras clave del puesto.</p>
+  </div>
+  <div class="ats-container" id="ats-grid"></div>
+</div>
+
+<hr class="divider" style="margin:48px 36px;"/>
+
+<!-- SECTION 5: Recursos para seguir creciendo -->
+<div class="wrap">
+  <div class="sec-head">
+    <h2><i class="fa-solid fa-rocket sec-icon"></i> Recursos para <span>Seguir Creciendo</span></h2>
+  </div>
+  <div class="growth-grid" id="growth-grid"></div>
+</div>
+
+<hr class="divider" style="margin:48px 36px;"/>
+
+<!-- SECTION 6: Recursos y Carreras -->
 <div class="wrap">
   <div class="sec-head" style="padding-bottom:24px;">
-    <h2>Recursos <span>IT</span></h2>
+    <h2><i class="fa-solid fa-map sec-icon"></i> Recursos y <span>Carreras</span> para Vos</h2>
   </div>
   <div class="resources-box">
     <div class="resources-text">
-      <h3>Guía de Carreras IT Gratuitas y Pagas</h3>
-      <p>Accedé a nuestra guía curada con los mejores caminos formativos para dar tu próximo gran salto en tecnología.</p>
+      <h3>Guía de Carreras y Formaciones Gratuitas y Pagas</h3>
+      <p>Accedé a nuestra guía, creada con los mejores caminos formativos para dar tu próximo gran salto en tecnología. Encontrás opciones gratuitas y pagas con toda la información completa.</p>
     </div>
     <a href="https://drive.google.com/drive/folders/1V7ocSN4Vc7O3mwsh359jcPBm__R_3U2u?usp=sharing"
        target="_blank" class="res-btn">
-      <i data-lucide="file-text" style="width:16px;height:16px;"></i>
-      Ver Guía Completa
-      <i data-lucide="arrow-up-right" style="width:14px;height:14px;"></i>
+      <i class="fa-solid fa-file-pdf"></i>
+      Ver Más
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
     </a>
   </div>
 </div>
@@ -66,16 +89,16 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">
-    <div class="footer-dot"></div>
+    <i class="fa-solid fa-fish footer-fish"></i>
     <span class="footer-name">FUNDACIÓN PESCAR × LABURATORIO</span>
   </div>
   <div class="footer-copy">
     Desarrollado para el evento LABURATORIO<br>
-    Potenciando el talento IT · 2025
+    Potenciando el talento IT · 2026
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <script src="main.js"></script>
 
 </body>
