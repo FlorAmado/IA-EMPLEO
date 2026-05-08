@@ -232,3 +232,31 @@ buildCards(intTools, 'int-grid', 'orange');
 buildPrompts(prompts, 'prompt-grid');
 buildATS(atsTemplates, 'ats-grid');
 buildGrowth(growthResources, 'growth-grid');
+
+// ── LOGOS SLIDER INFINITO ──
+const slider = document.querySelector('.logos-slider');
+const track = document.querySelector('.logos-track');
+const clone = track.cloneNode(true);
+
+const wrapper = document.createElement('div');
+wrapper.style.display = 'flex';
+wrapper.style.width = 'max-content';
+
+wrapper.appendChild(track.cloneNode(true));
+wrapper.appendChild(clone);
+slider.innerHTML = '';
+slider.appendChild(wrapper);
+
+const totalWidth = wrapper.scrollWidth / 2;
+let position = 0;
+
+function animateSlider() {
+  position -= 1;
+  if (Math.abs(position) >= totalWidth) {
+    position = 0;
+  }
+  wrapper.style.transform = `translateX(${position}px)`;
+  requestAnimationFrame(animateSlider);
+}
+
+animateSlider();

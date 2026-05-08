@@ -259,3 +259,46 @@ footer{
 .hero>*{animation:fadeUp .55s ease both;}
 .hero-badge{animation-delay:.05s}.hero h1{animation-delay:.14s}
 .hero-sub{animation-delay:.22s}.hero-rule{animation-delay:.3s}
+
+.logos-slider {
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  background: transparent;
+}
+.logos-slider::before,
+.logos-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.logos-slider::before { left: 0; background: linear-gradient(to right, #fafaf9, transparent); }
+.logos-slider::after  { right: 0; background: linear-gradient(to left, #fafaf9, transparent); }
+
+.logos-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.logos-track a {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logos-track img {
+  height: 50px;
+  width: 160px;
+  object-fit: contain;
+  margin: 0 40px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.logos-track a:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
