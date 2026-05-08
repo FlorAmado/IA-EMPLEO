@@ -177,7 +177,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--tex
 @media (max-width: 480px) {
   .ats-group {
     padding: 16px;
-    flex-direction: column; 
     align-items: flex-start;
   }
 .ats-label-wrap {
