@@ -154,7 +154,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--tex
   transition:box-shadow .2s;
 }
 .ats-group:hover{box-shadow:0 8px 24px rgba(26,46,143,.07);}
-.ats-label-wrap{display:flex;align-items:center;gap:10px;min-width:220px;flex-shrink:0;}
+.ats-label-wrap{display:flex;align-items:center;gap:10px;min-width:0px;flex: 1 1 200px;}
 .ats-icon-wrap{
   width:34px;height:34px;border-radius:9px;background:var(--blue-light);
   display:flex;align-items:center;justify-content:center;
@@ -174,6 +174,20 @@ body{font-family:'Montserrat',sans-serif;background:var(--cream);color:var(--tex
   transform:translateY(-2px);box-shadow:0 4px 14px rgba(249,115,22,.25);
 }
 
+@media (max-width: 480px) {
+  .ats-group {
+    padding: 16px;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+.ats-label-wrap {
+    width: 100%;
+  }
+
+  .sec-head h2 {
+    flex-wrap: wrap;
+  }
+}
 /* ── GROWTH SECTION ── */
 .growth-grid{
   display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;
