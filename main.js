@@ -60,7 +60,7 @@ const prompts = [
 
 const atsTemplates = [
   {
-    icon:"fa-brands fa-canva",
+    icon:"fa-regular fa-file",
     label:"Modelos CV Harvard — Canva",
     links:[
       {text:"Plantilla Harvard 1", href:"https://www.canva.com/templates/EAGiwP0Fxj4/"},
