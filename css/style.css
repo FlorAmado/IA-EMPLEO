@@ -776,3 +776,175 @@ footer {
   object-fit: contain;
   display: block;
 }
+
+/* ── DARK MODE TOGGLE BUTTON ── */
+.theme-toggle {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 20px rgba(26,46,143,.35);
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+.theme-toggle:hover {
+  background: var(--blue-deep);
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(26,46,143,.45);
+}
+.theme-toggle:active { transform: scale(.95); }
+
+/* ── DARK MODE ── */
+body.dark {
+  --cream: #0f1117;
+  --white: #1a1d27;
+  --border: #2d3148;
+  --text-dark: #f1f5f9;
+  --text-mid: #cbd5e1;
+  --text-light: #64748b;
+  --blue-light: #1e2240;
+  --blue-mid: #2d3560;
+  --orange-light: #2a1a0a;
+  --orange-mid: #3d2510;
+  background: var(--cream);
+  color: var(--text-dark);
+}
+
+/* Sponsors bar */
+body.dark .sponsors-bar { 
+  background: #1a1d27; border-color: var(--border); 
+}
+body.dark .sponsors-bar::before { 
+  background: linear-gradient(to right, #1a1d27, transparent); 
+}
+body.dark .sponsors-bar::after  { 
+  background: linear-gradient(to left,  #1a1d27, transparent); 
+}
+
+/* Cards */
+body.dark .card { 
+  background: var(--white); border-color: var(--border); 
+}
+body.dark .card:hover { 
+  box-shadow: 0 16px 36px rgba(0,0,0,.4); 
+}
+body.dark .card-icon { 
+  background: #252836; 
+}
+body.dark .card-name { 
+  color: var(--text-dark); 
+}
+body.dark .card-chip { 
+  background: var(--blue-light); color: #a5b4fc; 
+}
+body.dark .card.orange .card-chip { 
+  background: var(--orange-light); color: #fb923c; 
+}
+body.dark .card-arrow { 
+  color: var(--text-light); 
+}
+body.dark .card:hover .card-arrow { 
+  color: #a5b4fc; 
+}
+
+/* Prompt cards */
+body.dark .prompt-card { 
+  background: var(--white); border-color: var(--border); 
+}
+body.dark .prompt-card:hover { 
+  box-shadow: 0 12px 32px rgba(0,0,0,.35); 
+}
+body.dark .prompt-body { 
+  background: var(--blue-light); color: var(--text-mid); 
+}
+body.dark .prompt-title { 
+  color: #a5b4fc; 
+}
+
+/* ATS */
+body.dark .ats-group { 
+  background: var(--white); border-color: var(--border); 
+}
+body.dark .ats-group:hover { 
+  box-shadow: 0 8px 24px rgba(0,0,0,.3); 
+}
+body.dark .ats-icon-wrap { 
+  background: var(--blue-light); color: #a5b4fc; 
+}
+body.dark .ats-label { 
+  color: #a5b4fc; 
+}
+body.dark .ats-link { 
+  background: var(--orange-light); border-color: var(--orange-mid); color: #fb923c; 
+}
+body.dark .ats-link:hover { 
+  background: var(--orange); color: #fff; 
+}
+
+/* Growth cards */
+body.dark .growth-card { 
+  background: var(--white); border-color: var(--border); 
+}
+body.dark .growth-card:hover { 
+  box-shadow: 0 12px 28px rgba(0,0,0,.35); 
+}
+body.dark .growth-icon-wrap { 
+  background: #2a1a0a; 
+}
+body.dark .growth-label { 
+  color: #a5b4fc; 
+}
+body.dark .growth-desc { 
+  color: var(--text-mid); 
+}
+body.dark .growth-link { 
+  background: var(--blue-light); color: #a5b4fc; border-color: var(--blue-mid); 
+}
+body.dark .growth-link:hover { 
+  background: var(--blue); color: #fff; 
+}
+
+/* Varios */
+body.dark .sec-desc { 
+  background: var(--blue-light); border-color: #3d4a8f; color: var(--text-mid); 
+}
+body.dark .sec-head h2 { 
+  color: #e2e8f0; 
+}
+body.dark .divider { 
+  border-color: var(--border); 
+}
+
+/* Toggle button en dark mode */
+body.dark .theme-toggle { 
+  background: var(--orange); box-shadow: 0 4px 20px rgba(249,115,22,.35); 
+}
+body.dark .theme-toggle:hover { 
+  background: var(--orange-deep); box-shadow: 0 6px 28px rgba(249,115,22,.45); 
+}
+
+/* Color de íconos de cards por variante */
+.card.blue  .card-icon-glyph { 
+  color: var(--blue); 
+}
+.card.orange .card-icon-glyph { 
+  color: var(--orange); 
+}
+
+/* Dark mode: íconos de cards azules en blanco */
+body.dark .card.blue .card-icon-glyph { 
+  color: #fff; 
+}
+/* Logos del carrusel en dark */
+/* body.dark .sponsor-logo { filter: grayscale(100%) invert(1); opacity: .5; }
+body.dark .sponsor-logo:hover { filter: grayscale(0%) invert(1); opacity: 1; } */

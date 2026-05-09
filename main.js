@@ -128,7 +128,7 @@ function buildCards(data, id, variant){
       <div class="card-accent"></div>
       <div class="card-top">
         <div class="card-icon ${isBlue ? 'bl' : 'or'}">
-          <i class="${t.icon}" style="font-size:17px;color:${isBlue ? 'var(--blue)' : 'var(--orange)'}"></i>
+         <i class="${t.icon} card-icon-glyph" style="font-size:17px;"></i>
         </div>
         <div class="card-arrow">
           <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:13px;"></i>
