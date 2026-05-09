@@ -806,7 +806,7 @@ footer {
 
 /* ── DARK MODE ── */
 body.dark {
-  --cream: #0f1117;
+  --cream: #23252b;
   --white: #1a1d27;
   --border: #2d3148;
   --text-dark: #f1f5f9;
