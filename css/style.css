@@ -691,57 +691,88 @@ footer {
   animation-delay: .3s
 }
 
-.logos-slider {
+/* ── CARRUSEL ── */
+.sponsors-bar {
+  background: #fff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
   overflow: hidden;
-  padding: 30px 0;
   position: relative;
-  background: transparent;
 }
 
-.logos-slider::before,
-.logos-slider::after {
-  content: "";
+/* Bordes difuminados izquierda y derecha */
+.sponsors-bar::before,
+.sponsors-bar::after {
+  content: '';
   position: absolute;
-  top: 0;
-  width: 100px;
-  height: 100%;
+  top: 0; bottom: 0;
+  width: 120px;
   z-index: 2;
   pointer-events: none;
 }
-
-.logos-slider::before {
+.sponsors-bar::before {
   left: 0;
-  background: linear-gradient(to right, #fafaf9, transparent);
+  background: linear-gradient(to right, #fff 40%, transparent);
 }
-
-.logos-slider::after {
+.sponsors-bar::after {
   right: 0;
-  background: linear-gradient(to left, #fafaf9, transparent);
+  background: linear-gradient(to left, #fff 40%, transparent);
 }
 
-.logos-track {
+.sponsors-label {
+  text-align: center;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+.sponsors-track-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.sponsors-track {
   display: flex;
   align-items: center;
+  gap: 80px;
   width: max-content;
+  animation: scroll-logos 20s linear infinite;
 }
 
-.logos-track a {
-  display: inline-flex;
+/* .sponsors-track:hover {
+  animation-play-state: paused;
+} */
+
+@keyframes scroll-logos {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+.sponsor-logo {
+  display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-}
-
-.logos-track img {
-  height: 50px;
-  width: 160px;
-  object-fit: contain;
-  margin: 0 40px;
   filter: grayscale(100%);
-  opacity: 0.6;
-  transition: 0.3s;
+  opacity: .5;
+  transition: filter .3s, opacity .3s, transform .3s;
 }
 
-.logos-track a:hover img {
+.sponsor-logo:hover {
   filter: grayscale(0%);
   opacity: 1;
+  transform: scale(1.08);
+}
+
+.sponsor-logo img {
+  height: 40px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
 }
