@@ -11,7 +11,7 @@ const intTools = [
   {name:"Yoodli",          url:"yoodli.ai",           href:"https://yoodli.ai",            desc:"Coach de habla",       icon:"fa-solid fa-microphone"},
   {name:"CareerSwift",     url:"careerswift.ai",      href:"https://careerswift.ai",       desc:"Simulación IA",        icon:"fa-solid fa-bolt"},
   {name:"Interview Warmup",url:"interview-warmup.com",href:"https://interview-warmup.com", desc:"Por Google",           icon:"fa-brands fa-google"},
-  {name:"Big Interview",   url:"biginterview.com",    href:"https://biginterview.com",     desc:"Plataforma integral",  icon:"fa-solid fa-video"},
+ /*  {name:"Big Interview",   url:"biginterview.com",    href:"https://biginterview.com",     desc:"Plataforma integral",  icon:"fa-solid fa-video"}, */
   {name:"AI Job Scout",    url:"aijobscout.com",      href:"https://aijobscout.com",       desc:"Búsqueda + práctica",  icon:"fa-solid fa-compass"},
 ];
 
