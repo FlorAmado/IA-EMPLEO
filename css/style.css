@@ -796,6 +796,10 @@ footer {
   font-size: 18px;
   box-shadow: 0 4px 20px rgba(26,46,143,.35);
   transition: background .2s, transform .2s, box-shadow .2s;
+  
+/* MOBILE IMPROVEMENTS */
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 .theme-toggle:hover {
   background: var(--blue-deep);
@@ -818,6 +822,9 @@ body.dark {
   --orange-mid: #3d2510;
   background: var(--cream);
   color: var(--text-dark);
+ /* Ajuste del color principal en dark mode para fondos y secciones */
+--blue: #0b1024;
+--blue-deep: #050816;
 }
 
 /* Sponsors bar */
